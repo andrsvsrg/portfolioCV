@@ -1,0 +1,115 @@
+.container {
+
+  .content {
+    display: flex;
+    gap: 50px;
+    color: #FFFFFF;
+
+    .myPhoto {
+      flex: 35%;
+      img {
+        border-radius: 20px;
+      }
+    }
+
+    .aboutMeBlock {
+      flex: 63%;
+      width: 100%;
+      max-height: 75vh;
+      padding-right: 20px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #C9692D;
+        border-radius: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #333;
+        border-radius: 5px;
+      }
+
+      &::-webkit-scrollbar-button {
+        display: none;
+      }
+
+      .mainHeader {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        h3 {
+          color: #C9692D;
+          font-family: "Overpass Mono", monospace;
+          font-size: 20px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          margin: 0;
+        }
+
+        h2 {
+          color: #FFF;
+          font-family: "Overpass Mono", monospace;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          margin: 0;
+        }
+
+        .subheader {
+          color: #C7C7C7;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+        .textAboutMe {
+          color: #FFF;
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+      }
+
+      .educationBlock {
+
+      }
+      .experienceBlock {
+
+      }
+
+      .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 25px;
+      }
+
+      .downloadButton {
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+
+    }
+
+
+    .closeButton {
+      flex: 2%;
+      display: flex;
+      justify-content: flex-end;
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+

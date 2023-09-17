@@ -1,0 +1,77 @@
+.container {
+  height: 100%;
+  width: 100%;
+
+  .content {
+    display: flex;
+    gap: 50px;
+    color: #FFFFFF;
+
+    .projectsBlock {
+      flex:95%;
+      max-height: 75vh;
+      padding: 0 50px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 7px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #C9692D;
+        border-radius: 5px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: #333;
+        border-radius: 5px;
+      }
+
+      &::-webkit-scrollbar-button {
+        display: none;
+      }
+
+      .pageName {
+        color: #C9692D;
+        font-family: "Overpass Mono", monospace;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+      .mainDescription {
+        color: #FFF;
+        max-width: 70%;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      .projects {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      .downloadButton {
+        margin-top: 50px;
+        margin-bottom: 30px;
+      }
+    }
+
+
+
+    .closeButton {
+      flex: 2%;
+      display: flex;
+      justify-content: flex-end;
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
+
+}

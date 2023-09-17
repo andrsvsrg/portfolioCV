@@ -1,0 +1,244 @@
+$backgroundImageUrlBig: url('/src/assets/bg-big.jpg');
+$backgroundImageUrlMedium: url('/src/assets/bg-test.jpg');
+
+.parallaxStyle {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+
+
+  //@media (min-width: 769px) and (max-width: 1200px) {
+  //  background: $backgroundImageUrlMedium center/cover no-repeat;
+  //}
+  //
+  //@media (min-width: 1201px) {
+  //  background: $backgroundImageUrlBig center/cover no-repeat;
+  //}
+};
+
+
+
+
+
+
+.parallaxStyle {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    flex-direction: column;
+
+    @media (min-width: 320px) and (max-width: 1200px) {
+      margin-top: 10%;
+    }
+
+    h2 {
+      color: #FFF;
+      font-family: 'Overpass Mono', monospace;
+      font-size: 28px;
+      font-weight: normal;
+    }
+
+
+  }
+
+
+
+}
+
+
+.background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+
+  img {
+    @media (min-width: 320px) and (max-width: 1200px) {
+      scale: 0.75;
+
+    }
+  }
+
+}
+
+
+.svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+
+ svg {
+   @media (min-width: 320px) and (max-width: 1200px) {   /// min-width:968px - TODO - no interaction
+      scale: 0.75;
+   }
+
+ }
+}
+
+.displayBlock {
+
+
+  .tooltipDisplay {
+    display: inline-flex;
+    padding: 14px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    cursor:pointer;
+  }
+
+  &:hover {
+    .svgDisplay {
+      opacity: 0;
+    }
+
+    .tooltipDisplay {
+      opacity: 0.85;
+      transition: opacity 0.8s ease;
+    }
+  }
+
+  .fillDisplay,  {
+    cursor: pointer;
+  }
+
+  .svgDisplay {
+    animation: scaleDisplay 1.5s infinite;
+    transform-origin: center center;
+    opacity: 1;
+    transition: opacity 0.8s ease;
+  }
+
+  @keyframes scaleDisplay {
+    0%, 100% {
+      transform:matrix(1, 0, 0, 1, 0, 0);
+    }
+    50% {
+      transform:matrix(1.3, 0, 0, 1.3, -75, 30)
+    }
+  }
+}
+
+.notepadBlock {
+
+  .tooltipNotepad {
+    display: inline-flex;
+    padding: 14px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    cursor:pointer;
+  }
+
+  &:hover {
+    .svgNotepad {
+      opacity: 0;
+    }
+
+    .tooltipNotepad {
+        opacity: 0.85;
+        transition: opacity 0.8s ease;
+    }
+  }
+
+  .fillNotepad  {
+    cursor: pointer;
+  }
+
+  .svgNotepad {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    animation: scaleNotepad 1.5s infinite;
+    transform-origin: center center;
+  }
+
+  @keyframes scaleNotepad {
+    0%, 100% {
+      transform:matrix(1, 0, 0, 1, 0, 0);
+    }
+    50% {
+      transform:matrix(1.3, 0, 0, 1.3, 92, -118);
+    }
+  }
+}
+
+
+
+.cameraBlock {
+
+  .tooltipCamera {
+    display: inline-flex;
+    padding: 14px 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background-color: #FFFFFF;
+    opacity: 0;
+    transition: opacity 0.8s ease;
+    cursor:pointer;
+  }
+
+  &:hover {
+    .svgCamera {
+      opacity: 0;
+    }
+
+    .tooltipCamera {
+      opacity: 0.85;
+      transition: opacity 0.8s ease;
+    }
+  }
+
+  .fillCamera {
+    cursor: pointer;
+  }
+
+  .svgCamera {
+    animation: scaleCamera 1.5s infinite;
+    transform-origin: center center;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+  }
+
+
+
+  @keyframes scaleCamera {
+    0%, 100% {
+      transform:matrix(1, 0, 0, 1, 0, 0);
+    }
+    50% {
+      transform:matrix(1.3, 0, 0, 1.3, -170, -120);
+    }
+  }
+
+}
+
+
+
+
+
+
+

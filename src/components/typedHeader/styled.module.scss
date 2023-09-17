@@ -1,0 +1,22 @@
+.header {
+  font-size: 40px;
+  width: 550px;
+  text-align: left;
+  margin-top: 30vh;
+  color: white;
+  font-family: "Overpass Mono", monospace;
+  user-select: none;
+  .welcome {
+    font-size: 56px;
+    font-weight: bold;
+    color: #C9692D;
+  }
+
+  .typedHeader {
+    min-height: 200px;
+  }
+}
+
+.downloadButton {
+
+}

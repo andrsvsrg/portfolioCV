@@ -1,0 +1,28 @@
+.button {
+  display: flex;
+  padding: 14px 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  background:#2D8DC9;
+  position: relative;
+  z-index: 15;
+  cursor: pointer;
+  &:hover {
+    background:#36B2FF;
+  }
+
+  span {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  svg {
+
+  }
+}
