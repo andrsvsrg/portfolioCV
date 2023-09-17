@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styles from './styled.module.scss'
 import backgroundTable from '../../assets/bg-big.jpg'
-import { Parallax, useParallax } from 'react-scroll-parallax'
+import {  useParallax } from 'react-scroll-parallax'
 
 function InteractionTable({setTypeOfPopUpContent}) {
   const arrowP = useParallax({
