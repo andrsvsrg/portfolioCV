@@ -1,7 +1,7 @@
 import React from 'react'
 import BackgroundPopupCanvas from '../backgroundPopupCanvas/BackgroundPopupCanvas.jsx'
 import styles from './styled.module.scss'
-import { myProjects } from '../../helpers/projectsData.js'
+import { myProjects } from '../../helpers/data.js'
 import ProjectCard from './projectCard/ProjectCard.jsx'
 import DownloadButton from '../downloadButton/DownloadButton.jsx'
 function ProjectsContent({closeHandler}) {
@@ -14,7 +14,9 @@ function ProjectsContent({closeHandler}) {
 
         <div className={styles.projectsBlock}>
           <h3 className={styles.pageName}>My projects</h3>
-          <p className={styles.mainDescription}>I wish I had a yandere girl. So small, with a sweet voice, with cat ears. With unusual hair and eye color. With a smile that could drive you crazy. With soft hands, a neat ass. She'd make me pancakes with sour cream in the morning. </p>
+          <p className={styles.mainDescription}>
+            A little about my projects, I constantly expand my knowledge and consolidate it with completed projects.
+          </p>
           <div className={styles.projects}>
             {
               myProjects.map((project) => {

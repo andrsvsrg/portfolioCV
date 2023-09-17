@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './styled.module.scss'
 import BackgroundPopupCanvas from '../backgroundPopupCanvas/BackgroundPopupCanvas.jsx'
 import SkillProgressBar from './skillProgressBar/SkillProgressBar.jsx'
-import { skills } from '../../helpers/projectsData.js'
+import { skills } from '../../helpers/data.js'
 import DownloadButton from '../downloadButton/DownloadButton.jsx'
 
 
@@ -18,7 +18,9 @@ function SkillsContent({closeHandler}) {
             My Skills
           </div>
           <div className={styles.mainDescription}>
-            I wish I had a yandere girl. So small, with a sweet voice, with cat ears. With unusual hair and eye color. With a smile that could drive you crazy. With soft hands, a neat ass. She'd make me pancakes with sour cream in the morning.
+
+            I don’t stop gaining knowledge for a day; at the moment I have worked with many technologies, libraries, etc. I delved into some of them, some only superficially, here is most of what I worked with:
+            <span style={{fontWeight: 'bold'}}> Redux toolkit, RTK query, Axios, Three.js, ChakraUI, MaterialUI, Styled Components, Tailwind CSS, React router, Puppeteer...  </span>
           </div>
 
 
