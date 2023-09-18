@@ -3,14 +3,15 @@ import marvelGame from '../assets/MarvelGame.jpg'
 import map from '../assets/map.jpg'
 import cad from '../assets/cad.jpg'
 import memoryGame from '../assets/game.jpg'
+import inst from '../assets/inst.jpg'
 
 export const myProjects = [
   {
-    name:"Marvel Game",
-    description: 'Team project for a charity competition, technologies: React, Redux, MockAPI.',
-    img: marvelGame,
-    codeLink: 'https://github.com/andrsvsrg/marvel-game',
-    website: 'https://andrsvsrg.github.io/marvel-game/'
+    name:"Instagram Parser",
+    description: 'The project was created to consolidate knowledge in the backend: node js, expressJS, mongoDB',
+    img: inst,
+    codeLink: 'https://github.com/andrsvsrg/scrap-inst-back',
+    website: ''
   },
   {
     name:"Task manager",
@@ -18,6 +19,13 @@ export const myProjects = [
     img: taskManager,
     codeLink: 'https://github.com/andrsvsrg/reactToDo/tree/copyForComment',
     website: 'https://andrsvsrg.github.io/reactToDo/'
+  },
+  {
+    name:"Marvel Game",
+    description: 'Team project for a charity competition, technologies: React, Redux, MockAPI.',
+    img: marvelGame,
+    codeLink: 'https://github.com/andrsvsrg/marvel-game',
+    website: 'https://andrsvsrg.github.io/marvel-game/'
   },
   {
     name:"Interactive Map",
