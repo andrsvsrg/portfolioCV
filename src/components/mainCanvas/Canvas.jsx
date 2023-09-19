@@ -1,14 +1,14 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from "react";
 
 function CanvasAnimation() {
   const canvasRef = useRef(null);
-  const customPoints = []
+  const customPoints = [];
   let animationFrameId = null;
   const points = [];
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
@@ -34,8 +34,7 @@ function CanvasAnimation() {
       return { x, y, angle: angle + angleOffset, speed };
     }
 
-    function drawPoint(point, i, isCustom ) {
-
+    function drawPoint(point, i, isCustom) {
       point.x += point.speed * Math.cos(point.angle);
       point.y += point.speed * Math.sin(point.angle);
 
@@ -45,45 +44,38 @@ function CanvasAnimation() {
         point.y < 0 ||
         point.y > canvas.height
       ) {
-        if(!isCustom) {
+        if (!isCustom) {
           points[i] = createPoint();
         } else {
-          customPoints.splice(i,1)
+          customPoints.splice(i, 1);
         }
       }
 
-
-      if(isCustom) {
-        ctx.fillStyle = '#C9692D';
+      if (isCustom) {
+        ctx.fillStyle = "#C9692D";
       } else {
-        ctx.fillStyle = '#8a8a8a';
+        ctx.fillStyle = "#8a8a8a";
       }
 
       ctx.beginPath();
-      ctx.arc(point.x, point.y, isCustom ? 3 : 0.8 , 0, 2 * Math.PI);
+      ctx.arc(point.x, point.y, isCustom ? 3 : 0.8, 0, 2 * Math.PI);
       ctx.fill();
     }
 
     function drawBackground() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = '#8a8a8a';
-
+      ctx.fillStyle = "#8a8a8a";
 
       // console.log(newPoint)
       for (let i = 0; i < points.length; i++) {
         const point = points[i];
-        drawPoint(point, i, false)
-        if(customPoints[i]) {
+        drawPoint(point, i, false);
+        if (customPoints[i]) {
           const point = customPoints[i];
-          drawPoint(point, i, true)
+          drawPoint(point, i, true);
         }
       }
-
-
-
-
-
     }
 
     for (let i = 0; i < 300; i++) {
@@ -97,11 +89,11 @@ function CanvasAnimation() {
 
     animate();
 
-    window.addEventListener('resize', updateCanvasSize);
+    window.addEventListener("resize", updateCanvasSize);
 
     return () => {
       cancelAnimationFrame(animationFrameId);
-      window.removeEventListener('resize', updateCanvasSize);
+      window.removeEventListener("resize", updateCanvasSize);
     };
   }, []);
 
@@ -127,12 +119,12 @@ function CanvasAnimation() {
   return (
     <canvas
       style={{
-        position: 'absolute',
+        position: "absolute",
         bottom: 0,
         left: 0,
         right: 0,
         zIndex: 5,
-        cursor: 'pointer',
+        cursor: "pointer",
       }}
       ref={canvasRef}
       height={window.innerHeight}
@@ -143,9 +135,6 @@ function CanvasAnimation() {
 }
 
 export default CanvasAnimation;
-
-
-
 
 // useEffect(() => {
 //   const canvas = canvasRef.current;
@@ -295,8 +284,6 @@ export default CanvasAnimation;
 //
 //   animate();
 // }, []);
-
-
 
 // useEffect(() => {
 //   const canvas = canvasRef.current;

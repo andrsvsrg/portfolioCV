@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef } from "react";
 
 function BackgroundPopupCanvas() {
   const canvasRef = useRef(null);
   let animationFrameId = null;
-  let points = []
+  let points = [];
 
   useEffect(() => {
     const canvas = canvasRef.current;
-    const ctx = canvas.getContext('2d');
+    const ctx = canvas.getContext("2d");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
 
@@ -33,12 +33,10 @@ function BackgroundPopupCanvas() {
       return { x, y, angle: angle + angleOffset, speed };
     }
 
-
-
     function drawBackground() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      ctx.fillStyle = '#8a8a8a';
+      ctx.fillStyle = "#8a8a8a";
 
       for (let i = 0; i < points.length; i++) {
         const point = points[i];
@@ -52,19 +50,14 @@ function BackgroundPopupCanvas() {
           point.y > canvas.height
         ) {
           points[i] = createPoint();
-
         }
-        ctx.fillStyle = '#8a8a8a';
-
+        ctx.fillStyle = "#8a8a8a";
 
         ctx.beginPath();
-        ctx.arc(point.x, point.y,  0.8 , 0, 2 * Math.PI);
+        ctx.arc(point.x, point.y, 0.8, 0, 2 * Math.PI);
         ctx.fill();
-
       }
     }
-
-
 
     points = [...new Array(300)].map(() => createPoint());
 
@@ -75,26 +68,24 @@ function BackgroundPopupCanvas() {
 
     animate();
 
-    window.addEventListener('resize', updateCanvasSize);
+    window.addEventListener("resize", updateCanvasSize);
 
     return () => {
       cancelAnimationFrame(animationFrameId);
-      window.removeEventListener('resize', updateCanvasSize);
+      window.removeEventListener("resize", updateCanvasSize);
     };
   }, []);
-
-
 
   return (
     <canvas
       style={{
-        position: 'absolute',
+        position: "absolute",
         bottom: 0,
         left: 0,
         right: 0,
         zIndex: -1,
-        width: '100%',
-        height: '100%',
+        width: "100%",
+        height: "100%",
       }}
       ref={canvasRef}
       height={window.innerHeight}
@@ -104,5 +95,3 @@ function BackgroundPopupCanvas() {
 }
 
 export default BackgroundPopupCanvas;
-
-

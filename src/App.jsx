@@ -1,18 +1,16 @@
-import './App.css'
+import "./App.css";
 
-import HomePage from './components/HomePage.jsx'
-import { ParallaxProvider } from 'react-scroll-parallax'
-
+import HomePage from "./components/HomePage.jsx";
+import { ParallaxProvider } from "react-scroll-parallax";
 
 function App() {
-
   return (
     <>
       <ParallaxProvider>
-        <HomePage/>
+        <HomePage />
       </ParallaxProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

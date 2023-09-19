@@ -15,8 +15,22 @@
   .typedHeader {
     min-height: 200px;
   }
+
+  @media screen and (max-width: 959px) {
+      font-size: 22px;
+      width: auto;
+
+    .welcome {
+      font-size: 40px;
+    }
+    .typedHeader {
+      min-height: 130px;
+    }
+
+    .downloadButton {
+      scale: 0.8;
+    }
+  }
 }
 
-.downloadButton {
 
-}
