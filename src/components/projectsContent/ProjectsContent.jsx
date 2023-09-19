@@ -4,7 +4,7 @@ import BackgroundPopupCanvas from "../backgroundPopupCanvas/BackgroundPopupCanva
 import ProjectCard from "./projectCard/ProjectCard.jsx";
 import DownloadButton from "../downloadButton/DownloadButton.jsx";
 
-import { myProjects } from "../../helpers/data.js";
+import { myProjects } from "../../helpers/data.jsx";
 
 function ProjectsContent({ closeHandler }) {
   return (

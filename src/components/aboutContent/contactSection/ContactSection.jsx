@@ -1,6 +1,6 @@
 import styles from "./styled.module.scss";
 
-import { icons, contents } from '../../../helpers/data.js'
+import { icons, contents } from '../../../helpers/data.jsx'
 function ContactSection({ type }) {
 
   const headers = {

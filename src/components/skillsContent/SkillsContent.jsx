@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styled.module.scss";
 import BackgroundPopupCanvas from "../backgroundPopupCanvas/BackgroundPopupCanvas.jsx";
 import SkillProgressBar from "./skillProgressBar/SkillProgressBar.jsx";
-import { skills } from "../../helpers/data.js";
+import { skills } from "../../helpers/data.jsx";
 import DownloadButton from "../downloadButton/DownloadButton.jsx";
 
 function SkillsContent({ closeHandler }) {
