@@ -4,7 +4,7 @@ import map from "../assets/map.jpg";
 import cad from "../assets/cad.jpg";
 import memoryGame from "../assets/game.jpg";
 import inst from "../assets/inst.jpg";
-import React from 'react'
+import React from "react";
 
 export const myProjects = [
   {
@@ -120,8 +120,7 @@ export const contents = {
   ),
 };
 
-
-export  const icons = {
+export const icons = {
   email: (
     <svg
       xmlns="http://www.w3.org/2000/svg"

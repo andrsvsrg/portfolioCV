@@ -1,8 +1,7 @@
 import styles from "./styled.module.scss";
 
-import { icons, contents } from '../../../helpers/data.jsx'
+import { icons, contents } from "../../../helpers/data.jsx";
 function ContactSection({ type }) {
-
   const headers = {
     email: "Email",
     telegram: "Telegram",

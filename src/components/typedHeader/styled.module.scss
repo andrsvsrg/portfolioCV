@@ -29,6 +29,9 @@
 
     .downloadButton {
       scale: 0.8;
+      transform: translateX(-12%);
+      position:relative;
+      z-index: 8;
     }
   }
 }

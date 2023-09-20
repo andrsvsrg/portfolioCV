@@ -16,10 +16,11 @@ function SkillsContent({ closeHandler }) {
             I don’t stop gaining knowledge for a day; at the moment I have
             worked with many technologies, libraries, etc. I delved into some of
             them, some only superficially, here is most of what I worked with:
-            <span style={{ fontWeight: "bold" }}>  // todo styles
+            <span style={{ fontWeight: "bold" }}>
               {" "}
-              Redux toolkit, RTK query, Axios, Three.js, ChakraUI, MaterialUI,
-              Styled Components, Tailwind CSS, React router, Puppeteer...{" "}
+              // todo styles Redux toolkit, RTK query, Axios, Three.js,
+              ChakraUI, MaterialUI, Styled Components, Tailwind CSS, React
+              router, Puppeteer...{" "}
             </span>
           </div>
 

@@ -11,15 +11,19 @@ import Popup from "./popup/Popup.jsx";
 
 import useClickOutside from "../helpers/useClickOutside.js";
 import useBreakpoint from "../helpers/useBreakpoint.js";
+import About from "./mobileVersion/about/About.jsx";
+import Skills from "./mobileVersion/skills/Skills.jsx";
+import Projects from "./mobileVersion/projects/Projects.jsx";
 
 function HomePage() {
   const [typeOfPopupContent, setTypeOfPopUpContent] = useState(null); // 'about', 'skills', 'projects' , null
   const breakpoint = useBreakpoint(); // S || M
+  const popupRef = useClickOutside(closePopup);
+
   function closePopup() {
     setTypeOfPopUpContent(null);
+    document.body.style.overflowY = "auto";
   }
-
-  const popupRef = useClickOutside(closePopup);
 
   return (
     <div className={styles.wrapper}>
@@ -32,7 +36,7 @@ function HomePage() {
           <Arrow />
         </div>
       </Parallax>
-      <Parallax speed={10}>
+      <Parallax speed={0}>
         {breakpoint === "M" && (
           <>
             {!!typeOfPopupContent && (
@@ -47,7 +51,13 @@ function HomePage() {
             <InteractionTable setTypeOfPopUpContent={setTypeOfPopUpContent} />
           </>
         )}
-        {breakpoint === "S" && <></>}
+        {breakpoint === "S" && (
+          <>
+            <About />
+            <Skills />
+            <Projects />
+          </>
+        )}
       </Parallax>
     </div>
   );
