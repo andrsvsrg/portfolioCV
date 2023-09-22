@@ -11,13 +11,13 @@ import Popup from "./popup/Popup.jsx";
 
 import useClickOutside from "../helpers/useClickOutside.js";
 import useBreakpoint from "../helpers/useBreakpoint.js";
-import About from "./mobileVersion/about/About.jsx";
-import Skills from "./mobileVersion/skills/Skills.jsx";
-import Projects from "./mobileVersion/projects/Projects.jsx";
+import About from "./tabletVersion/about/About.jsx";
+import Skills from "./tabletVersion/skills/Skills.jsx";
+import Projects from "./tabletVersion/projects/Projects.jsx";
 
 function HomePage() {
   const [typeOfPopupContent, setTypeOfPopUpContent] = useState(null); // 'about', 'skills', 'projects' , null
-  const breakpoint = useBreakpoint(); // S || M
+  const breakpoint = useBreakpoint(); // desktop || tablet || phone
   const popupRef = useClickOutside(closePopup);
 
   function closePopup() {
@@ -37,7 +37,7 @@ function HomePage() {
         </div>
       </Parallax>
       <Parallax speed={0}>
-        {breakpoint === "M" && (
+        {breakpoint === "desktop" && (
           <>
             {!!typeOfPopupContent && (
               <div className={styles.overlay}>
@@ -51,13 +51,14 @@ function HomePage() {
             <InteractionTable setTypeOfPopUpContent={setTypeOfPopUpContent} />
           </>
         )}
-        {breakpoint === "S" && (
+        {breakpoint === "tablet" && (
           <>
             <About />
             <Skills />
             <Projects />
           </>
         )}
+        {breakpoint === "phone" && <></>}
       </Parallax>
     </div>
   );

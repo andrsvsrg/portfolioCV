@@ -16,10 +16,14 @@ function useBreakpoint() {
   }, []);
 
   function getBreakpoint() {
-    if (window.matchMedia("(max-width: 959px)").matches) {
-      return "S";
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      return "phone";
+    } else if (
+      window.matchMedia("(min-width: 769px) and (max-width: 959px)").matches
+    ) {
+      return "tablet";
     } else {
-      return "M";
+      return "desktop";
     }
   }
 
