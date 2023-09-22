@@ -1,7 +1,7 @@
 import styles from "./styled.module.scss";
 
 import { icons, contents } from "../../../helpers/data.jsx";
-function ContactSection({ type }) {
+function ContactSection({ type, mWidth }) {
   const headers = {
     email: "Email",
     telegram: "Telegram",
@@ -10,7 +10,7 @@ function ContactSection({ type }) {
   };
 
   return (
-    <div className={styles.container}>
+    <div style={{maxWidth: `${mWidth}`}} className={styles.container}>
       <div className={styles.header}>
         {icons[type]}
         <span>{headers[type]}</span>

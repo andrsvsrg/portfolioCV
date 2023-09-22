@@ -1,0 +1,57 @@
+.wrapper {
+  height: auto;
+  padding: 30px 30px 60px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  .content {
+
+    .pageName {
+      color: #C9692D;
+      font-family: "Overpass Mono", monospace;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .lastParagraph {
+      margin-bottom: 4px;
+    }
+
+    .skillsContainer {
+      flex-wrap: wrap;
+      gap: 10px;
+      display: flex;
+
+      .skillBox {
+        display: flex;
+        width: auto;
+        padding: 10px 14px;
+        justify-content: center;
+        align-items: center;
+
+        border-radius: 20px;
+        background: #292929;
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .progressBar {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+
+}

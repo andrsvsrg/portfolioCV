@@ -1,0 +1,29 @@
+.wrapper {
+  height: auto;
+  background-color: black;
+  padding: 30px 30px 60px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  .pageName {
+    color: #C9692D;
+    font-family: "Overpass Mono", monospace;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .imageContainer {
+    width: 100%;
+
+    img {
+      margin-top: 30px;
+      width: 100%;
+      border-radius: 20px;
+    }
+
+  }
+
+}

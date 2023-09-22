@@ -94,6 +94,9 @@ export const skills = [
   },
 ];
 
+export   const skillsArr = ['Redux toolkit', 'RTK query', 'Styled Components', 'Three.js', 'ChakraUI', 'MaterialUI', 'Tailwind CSS', 'Axios', 'React router', 'Puppeteer']
+
+
 export const contents = {
   email: (
     <a href="mailto:androsov.srg@gmail.com" target="_blank">

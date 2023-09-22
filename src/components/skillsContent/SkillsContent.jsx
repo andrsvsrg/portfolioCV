@@ -17,16 +17,15 @@ function SkillsContent({ closeHandler }) {
             worked with many technologies, libraries, etc. I delved into some of
             them, some only superficially, here is most of what I worked with:
             <span style={{ fontWeight: "bold" }}>
-              {" "}
-              // todo styles Redux toolkit, RTK query, Axios, Three.js,
+              styles Redux toolkit, RTK query, Axios, Three.js,
               ChakraUI, MaterialUI, Styled Components, Tailwind CSS, React
-              router, Puppeteer...{" "}
+              router, Puppeteer...
             </span>
           </div>
 
           <div className={styles.skillsProgressBars}>
             {skills.map((skill) => {
-              return <SkillProgressBar key={skill.name} skill={skill} />;
+              return <SkillProgressBar key={skill.name} skill={skill} width={'400px'} />;
             })}
           </div>
 

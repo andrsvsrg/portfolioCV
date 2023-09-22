@@ -67,10 +67,10 @@ function AboutContent({ closeHandler }) {
           </section>
 
           <section className={styles.contacts}>
-            <ContactSection type={"email"} />
-            <ContactSection type={"telegram"} />
-            <ContactSection type={"linkedin"} />
-            <ContactSection type={"phone"} />
+            <ContactSection type={"email"} mWidth={'260px'} />
+            <ContactSection type={"telegram"} mWidth={'260px'}/>
+            <ContactSection type={"linkedin"} mWidth={'260px'}/>
+            <ContactSection type={"phone"} mWidth={'260px'}/>
           </section>
 
           <div className={styles.downloadButton}>
