@@ -10,7 +10,7 @@ function ContactSection({ type, mWidth }) {
   };
 
   return (
-    <div style={{maxWidth: `${mWidth}`}} className={styles.container}>
+    <div style={{ maxWidth: `${mWidth}` }} className={styles.container}>
       <div className={styles.header}>
         {icons[type]}
         <span>{headers[type]}</span>

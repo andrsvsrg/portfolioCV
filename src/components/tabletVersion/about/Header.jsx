@@ -1,4 +1,4 @@
-import styles from './styled.module.scss'
+import styles from "./styled.module.scss";
 
 function Header(props) {
   return (
@@ -12,7 +12,7 @@ function Header(props) {
         </div>
       </section>
     </>
-  )
+  );
 }
 
-export default Header
+export default Header;

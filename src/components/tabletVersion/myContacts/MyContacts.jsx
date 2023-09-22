@@ -1,6 +1,6 @@
-import styles from './styled.module.scss'
-import ContactSection from '../../aboutContent/contactSection/ContactSection.jsx'
-import DownloadButton from '../../downloadButton/DownloadButton.jsx'
+import styles from "./styled.module.scss";
+import ContactSection from "../../aboutContent/contactSection/ContactSection.jsx";
+import DownloadButton from "../../downloadButton/DownloadButton.jsx";
 
 function MyContacts(props) {
   return (
@@ -9,10 +9,10 @@ function MyContacts(props) {
         <h3 className={styles.screenName}>My Contacts</h3>
 
         <section className={styles.contactContainer}>
-          <ContactSection type={"email"} mWidth={'400px'} />
-          <ContactSection type={"telegram"} mWidth={'400px'} />
-          <ContactSection type={"linkedin"} mWidth={'400px'}/>
-          <ContactSection type={"phone"} mWidth={'400px'}/>
+          <ContactSection type={"email"} mWidth={"400px"} />
+          <ContactSection type={"telegram"} mWidth={"400px"} />
+          <ContactSection type={"linkedin"} mWidth={"400px"} />
+          <ContactSection type={"phone"} mWidth={"400px"} />
         </section>
 
         <div className={styles.downloadButton}>
@@ -20,8 +20,7 @@ function MyContacts(props) {
         </div>
       </div>
     </div>
-
-  )
+  );
 }
 
-export default MyContacts
+export default MyContacts;

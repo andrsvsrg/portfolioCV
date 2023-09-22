@@ -1,8 +1,8 @@
 import styles from "../about/styled.module.scss";
 
-import Biography from './Biography.jsx'
-import Header from './Header.jsx'
-import myPhoto from '../../../assets/me.png'
+import Biography from "./Biography.jsx";
+import Header from "./Header.jsx";
+import myPhoto from "../../../assets/me.png";
 
 function About() {
   return (
@@ -13,8 +13,8 @@ function About() {
           <img src={myPhoto} alt="myPhoto" />
         </div>
         <div className={styles.aboutInfo}>
-          <Header/>
-          <Biography/>
+          <Header />
+          <Biography />
         </div>
       </div>
     </div>

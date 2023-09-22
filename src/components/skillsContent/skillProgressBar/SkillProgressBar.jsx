@@ -1,6 +1,6 @@
 import styles from "./styled.module.scss";
 
-import  { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 
 import icon from "../../../assets/rate.svg";
 
@@ -16,7 +16,7 @@ function SkillProgressBar({ skill, width }) {
   }, []);
 
   return (
-    <div style={{width: `${width}`}} className={styles.progressContainer}>
+    <div style={{ width: `${width}` }} className={styles.progressContainer}>
       <div className={styles.progressBarContainer}>
         <div className={styles.skillName}>{name}</div>
 
