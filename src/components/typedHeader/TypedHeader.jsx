@@ -1,7 +1,9 @@
 import styles from "./styled.module.scss";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+
 import DownloadButton from "../downloadButton/DownloadButton.jsx";
+
 const randomDelay = (coefficient) => Math.random() * coefficient;
 function TypedHeader() {
   const [welcomeMessage, setWelcomeMessage] = useState("");

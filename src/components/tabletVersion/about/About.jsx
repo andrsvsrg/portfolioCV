@@ -2,6 +2,7 @@ import styles from "../about/styled.module.scss";
 
 import Biography from "./Biography.jsx";
 import Header from "./Header.jsx";
+
 import myPhoto from "../../../assets/me.png";
 
 function About() {

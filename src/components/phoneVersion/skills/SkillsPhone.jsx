@@ -1,9 +1,10 @@
 import styles from "./styled.module.scss";
-import { skills, skillsArr } from "../../../helpers/data.jsx";
-import SkillProgressBar from "../../skillsContent/skillProgressBar/SkillProgressBar.jsx";
-import React from "react";
 
-function SkillsPhone(props) {
+import SkillProgressBar from "../../skillsContent/skillProgressBar/SkillProgressBar.jsx";
+
+import { skills, skillsArr } from "../../../helpers/data.jsx";
+
+function SkillsPhone() {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>

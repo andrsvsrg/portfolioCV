@@ -1,14 +1,18 @@
 import styles from "./styled.module.scss";
+
 import ContactSection from "../../aboutContent/contactSection/ContactSection.jsx";
 import DownloadButton from "../../downloadButton/DownloadButton.jsx";
 
-function MyContacts(props) {
+function MyContacts({ isMobile }) {
   return (
     <div className={styles.wrapper}>
       <div className={styles.content}>
         <h3 className={styles.screenName}>My Contacts</h3>
 
-        <section className={styles.contactContainer}>
+        <section
+          style={{ gridTemplateColumns: `repeat(${isMobile ? 1 : 2}, 1fr)` }}
+          className={styles.contactContainer}
+        >
           <ContactSection type={"email"} mWidth={"400px"} />
           <ContactSection type={"telegram"} mWidth={"400px"} />
           <ContactSection type={"linkedin"} mWidth={"400px"} />

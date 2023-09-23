@@ -1,7 +1,8 @@
 import styles from "../skills/styled.module.scss";
-import { skills, skillsArr } from "../../../helpers/data.jsx";
+
 import SkillProgressBar from "../../skillsContent/skillProgressBar/SkillProgressBar.jsx";
-import React from "react";
+
+import { skills, skillsArr } from "../../../helpers/data.jsx";
 
 function Skills() {
   return (
@@ -28,11 +29,7 @@ function Skills() {
         <section className={styles.progressBars}>
           {skills.map((skill) => {
             return (
-              <SkillProgressBar
-                key={skill.name}
-                skill={skill}
-                width={"335px"}
-              />
+              <SkillProgressBar key={skill.name} skill={skill} width={"100%"} />
             );
           })}
         </section>

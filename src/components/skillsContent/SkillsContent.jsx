@@ -1,10 +1,10 @@
-import React from "react";
 import styles from "./styled.module.scss";
+
+import DownloadButton from "../downloadButton/DownloadButton.jsx";
 import BackgroundPopupCanvas from "../backgroundPopupCanvas/BackgroundPopupCanvas.jsx";
 import SkillProgressBar from "./skillProgressBar/SkillProgressBar.jsx";
-import { skills } from "../../helpers/data.jsx";
-import DownloadButton from "../downloadButton/DownloadButton.jsx";
 
+import { skills, skillsArr } from "../../helpers/data.jsx";
 function SkillsContent({ closeHandler }) {
   return (
     <div className={styles.container}>
@@ -16,11 +16,13 @@ function SkillsContent({ closeHandler }) {
             I don’t stop gaining knowledge for a day; at the moment I have
             worked with many technologies, libraries, etc. I delved into some of
             them, some only superficially, here is most of what I worked with:
-            <span style={{ fontWeight: "bold" }}>
-              styles Redux toolkit, RTK query, Axios, Three.js, ChakraUI,
-              MaterialUI, Styled Components, Tailwind CSS, React router,
-              Puppeteer...
-            </span>
+            <div className={styles.skillsContainer}>
+              {skillsArr.map((skill) => (
+                <span key={skill} className={styles.skillBox}>
+                  {skill}
+                </span>
+              ))}
+            </div>
           </div>
 
           <div className={styles.skillsProgressBars}>

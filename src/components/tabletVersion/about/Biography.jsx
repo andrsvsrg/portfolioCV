@@ -1,7 +1,6 @@
-import React from "react";
 import styles from "./styled.module.scss";
 
-function Biography(props) {
+function Biography() {
   return (
     <>
       <h3 className={styles.blockHeader}>Biography</h3>
