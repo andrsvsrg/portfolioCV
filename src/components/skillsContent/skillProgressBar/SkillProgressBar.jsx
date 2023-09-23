@@ -1,34 +1,35 @@
 import styles from "./styled.module.scss";
 
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 
 import icon from "../../../assets/rate.svg";
 
 function SkillProgressBar({ skill, width }) {
   const { name, description, percentage } = skill;
-
-  const indicatorRef = useRef(null);
+  const { ref, inView, entry } = useInView();
 
   useEffect(() => {
-    setTimeout(() => {
-      indicatorRef.current.style.left = `calc(${percentage}% - 25px)`; // so interesting
-    }, 0);
-  }, []);
+    if (inView) {
+      entry.target.style.left = `calc(${percentage}% - 25px)`; // so interesting
+    }
+  }, [inView]);
 
   return (
     <div style={{ width: `${width}` }} className={styles.progressContainer}>
       <div className={styles.progressBarContainer}>
         <div className={styles.skillName}>{name}</div>
 
-        <div ref={indicatorRef} className={styles.percentageIndicator}>
+        <div ref={ref} className={styles.percentageIndicator}>
           <img src={icon} alt="Icon" />
           <div className={styles.percentageText}>{percentage}%</div>
         </div>
 
         <div className={styles.progressBar}>
-          <div className={styles.progress} style={{ width: `${percentage}%` }}>
-            &nbsp;
-          </div>
+          <div
+            className={styles.progress}
+            style={{ width: `${percentage}%` }}
+          ></div>
         </div>
       </div>
 

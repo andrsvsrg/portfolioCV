@@ -25,7 +25,6 @@ function Projects({ isMobile }) {
           })
         )}
       </section>
-      xx
     </div>
   );
 }

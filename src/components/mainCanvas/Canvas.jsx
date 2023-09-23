@@ -56,6 +56,7 @@ function CanvasAnimation() {
       } else {
         ctx.fillStyle = "#8a8a8a";
       }
+      // const randomFill = ["#8a8a8a","#C9692D" ][Math.round(Math.random())]  // not good idea
 
       ctx.beginPath();
       ctx.arc(point.x, point.y, isCustom ? 3 : 0.8, 0, 2 * Math.PI);

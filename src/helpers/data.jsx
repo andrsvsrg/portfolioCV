@@ -76,7 +76,7 @@ export const skills = [
     percentage: "70",
   },
   {
-    name: "Node.js, Express.js, MongoDB(mongoose)",
+    name: "Node.js, Express.js, MongoDB",
     description:
       "Beginner level, building simple APIs, registration and interaction with the database.",
     percentage: "45",

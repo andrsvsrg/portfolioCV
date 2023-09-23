@@ -1,6 +1,6 @@
 import styles from "./styled.module.scss";
 
-import  { useState } from "react";
+import { useState } from "react";
 
 import TypedHeader from "./typedHeader/TypedHeader.jsx";
 import CanvasAnimation from "./mainCanvas/Canvas.jsx";
