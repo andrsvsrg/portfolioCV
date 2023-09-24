@@ -52,8 +52,8 @@ function TypedHeader() {
         <div className={styles.typedHeader}>
           <span className={styles.welcome}> Hi, </span>
           <br />
-          I`m Serhii Androsov, <br />
-          {welcomeMessage}
+          <span>I`m Serhii Androsov,</span> <br />
+          <span>{welcomeMessage}</span>
         </div>
 
         <div className={styles.downloadButton}>

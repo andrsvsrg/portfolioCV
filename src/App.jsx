@@ -5,9 +5,11 @@ import { ParallaxProvider } from "react-scroll-parallax";
 
 function App() {
   return (
-    <ParallaxProvider>
-      <HomePage />
-    </ParallaxProvider>
+    <div>
+      <ParallaxProvider>
+        <HomePage />
+      </ParallaxProvider>
+    </div>
   );
 }
 
