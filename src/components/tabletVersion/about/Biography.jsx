@@ -14,9 +14,9 @@ function Biography() {
           cycle of web application development.
         </p>
         <p>
-          I really liked creating the logic of the site on JS both on the back
-          end and on the front end, thinking about all kinds of algorithms for
-          the implementation of various tasks.
+          I really liked creating the logic of the site on JS both on the
+          backend and on the frontend, thinking about all kinds of algorithms
+          for the implementation of various tasks.
         </p>
         <p>
           In my spare time, I solve tasks on codewars.com, take part in various
