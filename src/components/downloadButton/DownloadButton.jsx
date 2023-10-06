@@ -1,10 +1,7 @@
 import styles from "./styled.module.scss";
 function DownloadButton() {
-  function handler() {
-    console.log("click"); // todo CV
-  }
   return (
-    <button className={styles.button} onClick={handler}>
+    <a href="/assets/CV.pdf" download="CV.pdf" className={styles.button}>
       <span>Download full CV</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +18,7 @@ function DownloadButton() {
           strokeLinejoin="round"
         />
       </svg>
-    </button>
+    </a>
   );
 }
 
