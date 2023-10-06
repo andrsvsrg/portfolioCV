@@ -1,7 +1,7 @@
 import styles from "./styled.module.scss";
 function DownloadButton() {
   return (
-    <a href="/assets/CV.pdf" download="CV.pdf" className={styles.button}>
+    <a href="./CV.pdf" download="CV.pdf" className={styles.button}>
       <span>Download full CV</span>
       <svg
         xmlns="http://www.w3.org/2000/svg"
