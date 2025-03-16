@@ -59,52 +59,58 @@ export const myProjects = [
 
 export const skills = [
   {
-    name: "HTML + CSS(SCSS)",
-    description: "I confidently create complex UI elements.",
-    percentage: "90",
+    name: "HTML + CSS (SCSS)",
+    description: "Advanced skills in creating responsive UI elements with HTML and CSS (SCSS).",
+    percentage: "95",
   },
   {
-    name: "JavaScript(Typescript)",
-    description:
-      "Solid knowledge from primitives to asynchronous server requests and event loop",
-    percentage: "90",
+    name: "React, Redux, JavaScript",
+    description: "Advanced skills in building scalable applications with React, Redux, and JavaScript.",
+    percentage: "95",
   },
   {
-    name: "React + Redux",
-    description:
-      "Advanced level using various libraries and creating custom hooks.",
-    percentage: "70",
-  },
-  {
-    name: "Node.js, Express.js, MongoDB",
-    description:
-      "Beginner level, building simple APIs, registration and interaction with the database.",
-    percentage: "45",
-  },
-  {
-    name: "OOP and design patterns",
-    description: "I have knowledge of OOP principles and basic design patterns",
+    name: "Node.js, Express.js, MongoDB, MySQL",
+    description: "Intermediate skills in building APIs and working with databases (MongoDB, MySQL).",
     percentage: "60",
   },
   {
-    name: "Figma",
-    description:
-      "Confident knowledge even for creating a site design from scratch.",
+    name: "OOP and Design Patterns",
+    description: "Good understanding of OOP principles and basic design patterns.",
     percentage: "70",
+  },
+  {
+    name: "Figma",
+    description: "Confident in creating UI/UX designs and prototypes using Figma.",
+    percentage: "80",
   },
 ];
 
 export const skillsArr = [
-  "Redux toolkit",
-  "RTK query",
+  "Redux Toolkit",
+  "RTK Query",
   "Styled Components",
   "Three.js",
   "ChakraUI",
   "MaterialUI",
   "Tailwind CSS",
   "Axios",
-  "React router",
+  "React Router",
   "Puppeteer",
+  "Node.js",
+  "Express.js",
+  "MongoDB",
+  "MySQL",
+  "Sequelize",
+  "OAuth2",
+  "WebSockets",
+  "Git",
+  "Docker",
+  "Mongoose",
+  "Nginx",
+  "Linux/Unix",
+  "Unit Testing (Jest, Mocha)",
+  "JWT Authentication",
+  "BasicAuth",
 ];
 
 export const contents = {

@@ -9,9 +9,10 @@ function TypedHeader() {
   const [welcomeMessage, setWelcomeMessage] = useState("");
   const [isTyping, setIsTyping] = useState(true);
 
-  const welcomeText = "a Javascript developer.";
-  const welcomeText2 = "a Frontend developer.";
+  const welcomeText = "a JavaScript developer.";
+  const welcomeText2 = "a Full-Stack developer.";
   const [selectedTyping, setSelectedTyping] = useState(welcomeText);
+
   async function clearWelcomeMessage() {
     for (let i = welcomeMessage.length; i > 0; i--) {
       await new Promise((resolve) => {

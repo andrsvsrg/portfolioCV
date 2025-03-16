@@ -15,7 +15,6 @@ function InteractionTable({ setTypeOfPopUpContent }) {
   });
 
   const handler = (e) => {
-    console.log(e.target.closest("g[id]").id);
     if (e.target.closest("g[id]").id) {
       setTypeOfPopUpContent(e.target.closest("g[id]").id);
       document.body.style.overflowY = "hidden";
@@ -58,7 +57,7 @@ function InteractionTable({ setTypeOfPopUpContent }) {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <g id="projects" onClick={handler} className={styles.displayBlock}>
+          <g id="about" onClick={handler} className={styles.displayBlock}>
             <g className={styles.svgDisplay}>
               <path
                 opacity="0.4"
@@ -91,7 +90,7 @@ function InteractionTable({ setTypeOfPopUpContent }) {
               fill="white"
             >
               <div className={styles.tooltipDisplay}>
-                <span>My projects</span>
+                <span>About Me</span>
                 <svg
                   width="17"
                   height="21"
@@ -157,7 +156,7 @@ function InteractionTable({ setTypeOfPopUpContent }) {
             </foreignObject>
           </g>
 
-          <g id="about" onClick={handler} className={styles.cameraBlock}>
+          <g id="projects" onClick={handler} className={styles.cameraBlock}>
             <g className={styles.svgCamera}>
               <path
                 opacity="0.4"
@@ -183,13 +182,13 @@ function InteractionTable({ setTypeOfPopUpContent }) {
             <foreignObject
               x="1679"
               y="972"
-              width="192"
+              width="204"
               height="49"
               rx="24.5"
               fill="white"
             >
               <div className={styles.tooltipCamera}>
-                <span>About me</span>
+                <span>My projects</span>
                 <svg
                   width="17"
                   height="21"

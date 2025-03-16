@@ -13,9 +13,12 @@ function SkillsContent({ closeHandler }) {
         <div className={styles.skillsBlock}>
           <div className={styles.pageName}>My Skills</div>
           <div className={styles.mainDescription}>
-            I don’t stop gaining knowledge for a day; at the moment I have
-            worked with many technologies, libraries, etc. I delved into some of
-            them, some only superficially, here is most of what I worked with:
+            <p>
+              I don’t stop gaining knowledge for a day; at the moment I have
+              worked with many technologies, libraries, etc. I delved into some of
+              them, some only superficially, here is most of what I worked with:
+            </p>
+
             <div className={styles.skillsContainer}>
               {skillsArr.map((skill) => (
                 <span key={skill} className={styles.skillBox}>
