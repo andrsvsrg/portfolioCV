@@ -6,6 +6,8 @@
   color: white;
   font-family: "Overpass Mono", monospace;
   user-select: none;
+  position: relative;
+  z-index: 2;
   .welcome {
     font-size: 56px;
     font-weight: bold;
