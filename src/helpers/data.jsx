@@ -55,7 +55,7 @@ export const myProjects = [
     codeLink: "https://github.com/andrsvsrg/game",
     website: "https://andrsvsrg.github.io/game/",
   },
-];
+]
 
 export const skills = [
   {
