@@ -50,9 +50,10 @@ function Biography() {
           <span className={ styles.boldText }>Technologies:</span> React, Redux, Node.js, Express.js
 
           <ul>
-            <li>Improved and optimized the UI-builder (a low-code service), enhancing its functionality and user experience.</li>
-            <li>Developed and integrated WebSocket-based real-time communication features to improve system interactivity and responsiveness.</li>
-            <li>Worked on the FlowRunner platform, focusing on integration with external services and building a robust architecture for OAuth2 connections.</li>
+            <li>Developing and optimizing frontend components using React to create responsive and user-friendly interfaces.</li>
+            <li>Integrating frontend with backend services through APIs built using Node.js and Express.</li>
+            <li>Writing unit, integration, E2E tests to ensure code quality and robust functionality.</li>
+            <li>Continuously improving the user experience by adding new features and optimizing performance.</li>
           </ul>
         </span>
 
