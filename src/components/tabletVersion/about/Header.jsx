@@ -8,7 +8,7 @@ function Header(props) {
         <div className={styles.subHeader}>
           <span>Javascript / Frontend Developer</span>
           <br />
-          <span>28 years / Kyiv, Ukraine</span>
+          <span>{ calculateAge('1995-02-10') } years / Kyiv, Ukraine</span>
         </div>
       </section>
     </>
@@ -16,3 +16,16 @@ function Header(props) {
 }
 
 export default Header;
+
+function calculateAge(dateOfBirth) {
+  const birthDate = new Date(dateOfBirth);
+  const today = new Date();
+  let age = today.getFullYear() - birthDate.getFullYear();
+  const monthDifference = today.getMonth() - birthDate.getMonth();
+
+  if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birthDate.getDate())) {
+    age--;
+  }
+
+  return age;
+}
